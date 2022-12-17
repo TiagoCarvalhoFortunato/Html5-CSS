@@ -1,0 +1,14 @@
+@charset "UFT-8";
+
+body {
+    background-color: rgb(226, 204, 150);
+}
+h1 {
+    color: chocolate;
+}
+h2 {
+    color: coral;
+}
+ul {
+    text-align: center;
+}
