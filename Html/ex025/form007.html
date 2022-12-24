@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        fieldset{
+            margin-bottom: 10px;
+            width: 250px;
+        }
+
+        textarea{
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <fieldset>
+            <legend>Cadastro profissional</legend>
+            <p>
+                <label for="estados">Estado:</label>
+                <select name="estados" id="estados">
+                    <option value="" selected>---Escolha---</option>
+                    <optgroup label="Região Sudeste">
+                        <option value="Mg">Minas Gerais</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                    </optgroup>
+                </select>
+                <br>
+            </p>
+            <p>
+                <label for="prof">Profissão: </label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option> Administrador</option>
+                    <option> Contabilista</option>
+                    <option> Desenvolvedor</option>
+                </datalist>
+            </p>
+        </fieldset>
+        <label for="imgs">Mensagem: </label><br>
+        <textarea name="text" id="itext" cols="30" rows="10" placeholder="Digite aqui seu texto"></textarea>
+
+    </form>
+    
+</body>
+</html>
