@@ -24,7 +24,7 @@
             <legend>Cadastro profissional</legend>
             <p>
                 <label for="estados">Estado:</label>
-                <select name="estados" id="estados">
+                <select name="estados" id="estados" required>
                     <option value="" selected>---Escolha---</option>
                     <optgroup label="Região Sudeste">
                         <option value="Mg">Minas Gerais</option>
@@ -41,7 +41,7 @@
             </p>
             <p>
                 <label for="prof">Profissão: </label>
-                <input type="text" name="prof" id="iprof" list="lstprof">
+                <input type="text" name="prof" id="iprof" list="lstprof" required>
                 <datalist id="lstprof">
                     <option> Administrador</option>
                     <option> Contabilista</option>
@@ -50,7 +50,10 @@
             </p>
         </fieldset>
         <label for="imgs">Mensagem: </label><br>
-        <textarea name="text" id="itext" cols="30" rows="10" placeholder="Digite aqui seu texto"></textarea>
+        <textarea name="text" id="itext" cols="30" rows="10" placeholder="Digite aqui seu texto"></textarea><br>
+
+        <input type="submit" value="ENVIAR">
+        <input type="reset" value="LIMPAR">
 
     </form>
     
