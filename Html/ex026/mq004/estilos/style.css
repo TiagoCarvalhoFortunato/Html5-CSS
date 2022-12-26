@@ -32,12 +32,15 @@ main {
     border-radius: 10px;
     display: block;
     margin: auto;
-    
+
+}
+
+img {
+    margin: auto;
 }
 
 img#phone {
     display: block;
-    margin: auto;
 }
 img#tablet {
     display: none;
