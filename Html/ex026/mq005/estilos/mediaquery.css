@@ -1,13 +1,14 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 700px) {
 
-    body {
-        background-color: aqua;
+    header h1 {
+        color: white
     }
 
-    span#burguer {
+    i#burguer {
         display: none;
     }
+
 
 }
